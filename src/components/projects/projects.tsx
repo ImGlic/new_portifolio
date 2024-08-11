@@ -11,7 +11,7 @@ const Services = () => {
       id="projects"
     >
       <div className="container mx-auto mb-10 ">        
-        <div className=" flex flex-wrap justify-evenly items-center gap-2 mt-10">
+        <div className=" flex flex-wrap justify-evenly items-center gap-8 mt-10">
           <Card
             title="Tutor Inteligente"
             image={ImageTutor}
