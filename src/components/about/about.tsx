@@ -1,5 +1,13 @@
 import Slider from "react-slick";
 import { useInView } from "react-intersection-observer";
+import imageMinhaHistoria from "../../assets/foto-trabalhando.jpg";
+import imageMinhaHistoria2 from "../../assets/foto-trabalhando2.jpg";
+import imageMinhaEstudando from "../../assets/foto-estudando1.jpg";
+import imageMinhaTirandoFoto from "../../assets/foto-tirandofoto.jpg";
+import imageMinhaEventocarro from "../../assets/foto-eventocarro.jpg";
+import imageMinhaEventoaviacao from "../../assets/foto-eventoaviacao.jpg";
+import imageMinhaVolei from "../../assets/foto-volei.jpg";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -19,27 +27,122 @@ const About = () => {
   };
 
   return (
-    <section className="section" id="about" ref={ref}>
+    <section
+      className="min-h-[85vh] lg:min-h-[78vh] flex flex-col justify-center items-center mt-4"
+      id="about"
+      ref={ref}
+    >
+      <div>
+        <h1 className="h1 text-primary text-3xl font-bold">Sobre Mim</h1>
+      </div>
       <div className="container mx-auto my-10">
         <Slider {...settings}>
           <div className="text-center p-6 bg-slate-800 rounded-lg">
-            <h1 className="h1 mb-4 text-slate-50">About Me</h1>
+            <h1 className="mb-4 text-slate-50 font-2xl font-bold">
+              Minha história
+            </h1>
+            <div className="flex justify-center mt-2 mb-2 gap-x-3">
+              <img
+                src={imageMinhaHistoria}
+                width="20%"
+                height="50%"
+                alt={`icone`}
+                className="rounded"
+              />
+
+              <img
+                src={imageMinhaHistoria2}
+                width="20%"
+                height=""
+                alt={`icone`}
+                className="rounded"
+              />
+            </div>
+
             <p className="text-slate-50">
-              I am a technology enthusiast, always curious about how things work. I started my journey in technology by creating simple websites and playing with electronics. I love exploring new technologies and am always seeking new challenges.
+              Desde criança, sempre fui curioso e adorava desmontar objetos para
+              entender o que havia dentro. O desafio vinha depois, quando eu
+              tentava remontar e nem sempre conseguia, mas essa busca por criar
+              ou consertar algo me fez apaixonar por tecnologia. Hoje, sou um
+              engenheiro de software que adora aprender, resolver problemas e
+              estar em constante evolução. No ecossistema JavaScript, Python e
+              PHP móveis e integrações de APIs, sempre buscando novos desafios.
             </p>
           </div>
 
           <div className="text-center p-6 bg-slate-800 rounded-lg">
-            <h3 className="h3 mb-4 text-slate-50">Studies and Future</h3>
+            <h1 className="mb-4 text-slate-50 font-2xl font-bold">
+              Estudos e Futuro
+            </h1>
+            <div className="flex justify-center mt-2 mb-2 gap-x-3">
+              <img
+                src={imageMinhaEstudando}
+                width="20%"
+                height="50%"
+                alt={`icone`}
+                className="rounded"
+              />
+            </div>
             <p className="text-slate-50">
-              I am currently studying computer engineering and working as a full stack developer. My main programming languages include JavaScript, TypeScript, and Python. In the future, I plan to deepen my knowledge in artificial intelligence and contribute to technological innovations.
+              Atualmente, estou mergulhado nos estudos de Engenharia da
+              Computação e desempenhando o papel de Desenvolvedor FullStack.
+              Minhas armas de escolha são JavaScript, TypeScript e Python, que
+              manejo com destreza. No horizonte, meus planos incluem mergulhar
+              ainda mais fundo no mundo da inteligência artificial e deixar
+              minha marca nas inovações tecnológicas. Quem sabe, talvez um dia
+              eu até consiga entender todos os mistérios do universo digital.
             </p>
           </div>
 
           <div className="text-center p-6 bg-slate-800 rounded-lg">
-            <h3 className="h3 mb-4 text-slate-50">My Hobbies</h3>
+            <h3 className="mb-4 text-slate-50 font-2xl font-bold">
+              Meus Hobbies
+            </h3>
+            <div className="flex justify-center mt-2 mb-2 gap-x-3">
+              <img
+                src={imageMinhaTirandoFoto}
+                width="20%"
+                height="50%"
+                alt={`icone`}
+                className="rounded"
+              />
+
+              <img
+                src={imageMinhaEventoaviacao}
+                width="20%"
+                height=""
+                alt={`icone`}
+                className="rounded"
+              />
+
+              <img
+                src={imageMinhaEventocarro}
+                width="20%"
+                height=""
+                alt={`icone`}
+                className="rounded"
+              />
+
+              <img
+                src={imageMinhaVolei}
+                width="20%"
+                height=""
+                alt={`icone`}
+                className="rounded"
+              />
+            </div>
             <p className="text-slate-50">
-              When I'm not coding, I enjoy playing sports, exploring new music, and cooking. I'm also passionate about photography and travel, always looking for new adventures.
+              Quando não estou programando, adoro me dedicar a várias atividades
+              que me mantêm ativo e engajado. Pratico corrida para manter a
+              forma e o bem-estar, e jogo vôlei tanto para me divertir quanto
+              para competir. Além disso, tenho um grande interesse por carros e
+              aviação, e frequentemente participo de eventos relacionados a
+              esses temas. Meu passado como atleta de futebol americano também
+              me trouxe valiosas experiências e desafios. Fora dos esportes, sou
+              um entusiasta da música, gosto de explorar novos sons e cozinhar
+              pratos variados. A fotografia e as viagens são duas das minhas
+              grandes paixões, e estou sempre em busca de novas aventuras para
+              capturar e explorar.
             </p>
           </div>
         </Slider>
