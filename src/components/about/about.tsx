@@ -66,7 +66,7 @@ const About = () => {
               ou consertar algo me fez apaixonar por tecnologia. Hoje, sou um
               engenheiro de software que adora aprender, resolver problemas e
               estar em constante evolução. No ecossistema JavaScript, Python e
-              PHP móveis e integrações de APIs, sempre buscando novos desafios.
+              PHP e integrações de APIs, sempre buscando novos desafios.
             </p>
           </div>
 
