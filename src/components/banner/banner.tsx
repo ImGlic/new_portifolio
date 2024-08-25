@@ -1,12 +1,7 @@
-//images
 import Image from "../../assets/perfil.jpg";
-//type animation
 import { TypeAnimation } from "react-type-animation";
-//motion
 import { motion } from "framer-motion";
-//icons
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-//variants
 import { fadeIn } from "../../variants";
 
 const Banner = () => {
@@ -16,31 +11,30 @@ const Banner = () => {
       id="home"
     >
       <div className="container max-auto lg:flex justify-center">
-        <div className=" flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
-          {" "}
-          {/*image */}
+        <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
+          {/* Image */}
           <motion.div
             variants={fadeIn("down", 0.5)}
-            initiol="hidden"
+            initial="hidden"
             whileInView={"show"}
-            viewport={{ onde: false, amount: 0.7 }}
+            viewport={{ once: false, amount: 0.7 }}
             className="flex flex-1 items-center justify-center max-w-[320px] max-w-[482px]
             lg:flex lg:flex-1 lg:items-center lg:justify-center 
             md:flex md:flex-1 md:items-center md:justify-center"
           >
             <img
-              className="rounded-full h-[400px] w-[400px] "
+              className="rounded-full h-[400px] w-[400px]"
               src={Image}
-              alt=""
+              alt="Profile"
             />
           </motion.div>
-          {/*text */}
-          <div className="flex-1 text-center text-white lg:text-left ">
+          {/* Text */}
+          <div className="flex-1 text-center text-white lg:text-left">
             <motion.h1
               variants={fadeIn("up", 0.3)}
-              initiol="hidden"
+              initial="hidden"
               whileInView={"show"}
-              viewport={{ onde: false, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.7 }}
               className="text-[55px] font-bold mb-2"
             >
               VICTOR <span>GLICÉRIO</span>
@@ -48,7 +42,7 @@ const Banner = () => {
 
             <motion.div
               variants={fadeIn("up", 0.3)}
-              initiol="hidden"
+              initial="hidden"
               whileInView={"show"}
               viewport={{ onde: false, amount: 0.7 }}
               className="mb-6 txt-[50px] lg:text-[60px] text-white font-semibold uppercase
@@ -82,18 +76,28 @@ const Banner = () => {
               <a
                 target="_blank"
                 href="https://instagram.com/imglic?igshid=YmMyMTA2M2Y="
+                rel="noopener noreferrer"
               >
                 <FaInstagram />
               </a>
-              <a target="_blank" href="https://www.twitter.com/im_glic">
+              <a
+                target="_blank"
+                href="https://www.twitter.com/im_glic"
+                rel="noopener noreferrer"
+              >
                 <FaTwitter />
               </a>
-              <a target="_blank" href="https://github.com/ImGlic">
+              <a
+                target="_blank"
+                href="https://github.com/ImGlic"
+                rel="noopener noreferrer"
+              >
                 <FaGithub />
               </a>
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/victorglicerio1"
+                rel="noopener noreferrer"
               >
                 <FaLinkedin />
               </a>

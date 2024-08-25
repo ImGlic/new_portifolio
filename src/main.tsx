@@ -5,6 +5,8 @@ import About from "./components/about/index.tsx";
 import Banner from "./components/banner/index.tsx";
 import Projects from "./components/projects/index.tsx";
 import Experience from "./components/experience/index.tsx";
+import Contato from "./components/contact/index.tsx";
+import Footer from "./components/footer/index.tsx";
 import "./index.css";
 
 createRoot(document.getElementById("root")!).render(
@@ -14,7 +16,9 @@ createRoot(document.getElementById("root")!).render(
       <Banner />
       <About />
       <Projects />
-      <Experience />      
+      <Experience />     
+      <Contato />
+      <Footer />
     </div>
   </StrictMode>
 );
