@@ -1,7 +1,20 @@
 import Image from "../../assets/perfil.jpg";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaPython,
+  FaReact,
+  FaJs,
+  FaDocker,
+  FaPhp,
+  FaLinux,
+  FaCss3,
+  FaHtml5,
+} from "react-icons/fa";
 import { fadeIn } from "../../variants";
 
 const Banner = () => {
@@ -69,7 +82,16 @@ const Banner = () => {
             <div
               className=" flex max-w-max gap-x-6 items-center mb-12 
                  mx-auto lg:mx-0"
-            ></div>
+            >
+              <FaPython />
+              <FaReact />
+              <FaJs />
+              <FaGithub />
+              <FaDocker />
+              <FaPhp />
+              <FaCss3 />
+              <FaHtml5 />
+            </div>
 
             {/*Redes Sociais*/}
             <div className="flex text-[30px] gap-y-5 gap-x-6 max-w-max mx-auto lg:mx-0">

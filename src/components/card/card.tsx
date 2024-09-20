@@ -10,7 +10,14 @@ type info = {
   link?: string;
 };
 
-const Card = ({ title, image, objetivo, responsabilidade, tecnologia, link }: info) => {
+const Card = ({
+  title,
+  image,
+  objetivo,
+  responsabilidade,
+  tecnologia,
+  link,
+}: info) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
@@ -18,7 +25,7 @@ const Card = ({ title, image, objetivo, responsabilidade, tecnologia, link }: in
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="rounded-lg cursor-pointer">
+    <div className="rounded-lg cursor-pointer  ml-4 mt-4">
       {/* Ao clicar no título, o modal é aberto */}
       <div
         onClick={openModal}
@@ -27,7 +34,10 @@ const Card = ({ title, image, objetivo, responsabilidade, tecnologia, link }: in
         <p className="text-white font-lancelot">{title}</p>
       </div>
 
-      <div className="flex flex-col justify-center items-center bg-white h-[300px] w-[300px] ">
+      <div
+        onClick={openModal}
+        className="flex flex-col justify-center items-center bg-white h-[300px] w-[300px] "
+      >
         <p className="flex justify-center items-center text-black text-5xl indent-[20px] ">
           <img
             src={`${image}`}
@@ -38,13 +48,15 @@ const Card = ({ title, image, objetivo, responsabilidade, tecnologia, link }: in
         </p>
       </div>
 
-      <div className="flex flex-col rounded-b-3xl bg-primary h-[50px] w-[300px] ">
+      <a
+        target="_blank"
+        href={link || ""}
+        className="flex flex-col rounded-b-3xl bg-primary h-[50px] w-[300px] "
+      >
         <p className="text-white flex justify-center p-2 items-center text-lg font-lancelot ">
-          <a target="_blank" href={link || ""}>
-            Visitar
-          </a>
+          Visitar
         </p>
-      </div>
+      </a>
 
       <Modal isOpen={isModalOpen} onClose={closeModal} title={title}>
         <div>

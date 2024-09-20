@@ -56,8 +56,7 @@ const Services = () => {
     >
       <div><h1 className="h1 text-primary text-3xl font-bold">Projetos</h1></div>
 
-      <div className="container mx-auto mb-10 mt-8">
-        <Slider {...settings}>
+      <div className="container flex flex-wrap justify-center itens-center mx-auto mb-10 mt-8">
           <Card
             title="Tutor Inteligente"
             image={ImageTutor}
@@ -76,7 +75,7 @@ const Services = () => {
             objetivo="Nossa plataforma foi projetada com a simplicidade em mente, permitindo que você 
               acompanhe seus gastos de forma fácil e rápida, incluindo gráficos e  detalhes."
             responsabilidade="Realizei uma breve atuação como Dev Front End e realizo pontuais participação."
-            tecnologia="Nesse projeto foi usados as seguintes tecnologias: Python, Django, BootStrap entre outras. lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"  
+            tecnologia="Nesse projeto foi usados as seguintes tecnologias: Python, Django, BootStrap entre outras."  
             link="https://nibby.fuzzylab.tech"
           />
 
@@ -99,7 +98,6 @@ const Services = () => {
             tecnologia="Nesse projeto foi usados as seguintes tecnologias: Python, Django, Tailwind, React e Typescript."
             link="https://energyconsult.imglic.tech/"
           />
-        </Slider>
       </div>
     </section>
   );

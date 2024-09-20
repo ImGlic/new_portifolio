@@ -36,12 +36,11 @@ const About = () => {
         <h1 className="h1 text-primary text-3xl font-bold">Sobre Mim</h1>
       </div>
       <div className="container mx-auto my-10">
-        <Slider {...settings}>
           <div className="text-center p-6 bg-slate-800 rounded-lg">
             <h1 className="mb-4 text-slate-50 font-2xl font-bold">
               Minha história
             </h1>
-            <div className="flex justify-center mt-2 mb-2 gap-x-3">
+            {/* <div className="flex justify-center mt-2 mb-2 gap-x-3">
               <img
                 src={imageMinhaHistoria}
                 width="20%"
@@ -57,7 +56,7 @@ const About = () => {
                 alt={`icone`}
                 className="rounded"
               />
-            </div>
+            </div> */}
 
             <p className="text-slate-50">
               Desde criança, sempre fui curioso e adorava desmontar objetos para
@@ -74,7 +73,7 @@ const About = () => {
             <h1 className="mb-4 text-slate-50 font-2xl font-bold">
               Estudos e Futuro
             </h1>
-            <div className="flex justify-center mt-2 mb-2 gap-x-3">
+            {/* <div className="flex justify-center mt-2 mb-2 gap-x-3">
               <img
                 src={imageMinhaEstudando}
                 width="20%"
@@ -82,7 +81,7 @@ const About = () => {
                 alt={`icone`}
                 className="rounded"
               />
-            </div>
+            </div> */}
             <p className="text-slate-50">
               Atualmente, estou mergulhado nos estudos de Engenharia da
               Computação e desempenhando o papel de Desenvolvedor FullStack.
@@ -145,7 +144,6 @@ const About = () => {
               capturar e explorar.
             </p>
           </div>
-        </Slider>
       </div>
     </section>
   );
