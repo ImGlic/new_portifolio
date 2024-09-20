@@ -86,7 +86,7 @@ const About = () => {
             <p className="text-slate-50">
               Atualmente, estou mergulhado nos estudos de Engenharia da
               Computação e desempenhando o papel de Desenvolvedor FullStack.
-              Minhas armas de escolha são JavaScript, TypeScript e Python, que
+              Minhas principais Stacks são JavaScript, TypeScript e Python, que
               manejo com destreza. No horizonte, meus planos incluem mergulhar
               ainda mais fundo no mundo da inteligência artificial e deixar
               minha marca nas inovações tecnológicas. Quem sabe, talvez um dia
