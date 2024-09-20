@@ -23,7 +23,7 @@ const Card = ({ title, image, objetivo, link }: info) => {
       </div>
       <div className="flex flex-col rounded-b-3xl bg-primary h-[50px] w-[300px] ">
         <p className="text-white flex flex-rol justify-center p-2 items-center text-lg font-lancelot ">
-          <a href={link || ""}>Visitar</a>
+          <a target="_blank" href={link || ""}>Visitar</a>
         </p>
       </div>
     </a>
