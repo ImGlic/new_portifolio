@@ -1,3 +1,6 @@
+import React, { useState } from "react";
+import Modal from "../modal/index";
+
 type info = {
   title: string;
   image: string;
@@ -6,12 +9,23 @@ type info = {
 };
 
 const Card = ({ title, image, objetivo, link }: info) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+
+  const closeModal = () => setIsModalOpen(false);
+
   return (
-    <a className="rounded-lg  cursor-pointer ">
-      <div className="flex flex-col justify-center items-center rounded-t-3xl bg-[#474A51] h-[50px] w-[300px] ">
+    <div className="rounded-lg cursor-pointer">
+      {/* Ao clicar no título, o modal é aberto */}
+      <div
+        onClick={openModal}
+        className="flex flex-col justify-center items-center rounded-t-3xl bg-[#474A51] h-[50px] w-[300px] "
+      >
         <p className="text-white font-lancelot">{title}</p>
       </div>
-      <div className="flex flex-col justify-center items-center bg-white  h-[300px] w-[300px] ">
+
+      <div className="flex flex-col justify-center items-center bg-white h-[300px] w-[300px] ">
         <p className="flex justify-center items-center text-black text-5xl indent-[20px] ">
           <img
             src={`${image}`}
@@ -21,12 +35,29 @@ const Card = ({ title, image, objetivo, link }: info) => {
           />
         </p>
       </div>
+
       <div className="flex flex-col rounded-b-3xl bg-primary h-[50px] w-[300px] ">
-        <p className="text-white flex flex-rol justify-center p-2 items-center text-lg font-lancelot ">
-          <a target="_blank" href={link || ""}>Visitar</a>
+        <p className="text-white flex justify-center p-2 items-center text-lg font-lancelot ">
+          <a target="_blank" href={link || ""}>
+            Visitar
+          </a>
         </p>
       </div>
-    </a>
+
+      <Modal isOpen={isModalOpen} onClose={closeModal} title={title}>
+        <div>
+          <div className="flex justify-center itens-center">
+            <img
+              src={image}
+              width="50%"
+              height="25%"
+              alt={`imagem do card ${title}`}
+            />
+          </div>
+          <p className="text-black mt-4">{objetivo}</p>
+        </div>
+      </Modal>
+    </div>
   );
 };
 
