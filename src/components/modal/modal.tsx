@@ -24,7 +24,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
 
   return ReactDOM.createPortal (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-      <div className="bg-white rounded-lg shadow-lg w-[80%] max-w-sm mx-auto p-6 relative">
+      <div className="bg-white rounded-lg shadow-lg h-[550px] max-w-sm mx-auto p-6 relative overflow-y-auto">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-semibold">{title}</h2>
           <button

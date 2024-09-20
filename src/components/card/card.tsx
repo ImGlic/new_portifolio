@@ -5,10 +5,12 @@ type info = {
   title: string;
   image: string;
   objetivo: string;
+  responsabilidade: string;
+  tecnologia: string;
   link?: string;
 };
 
-const Card = ({ title, image, objetivo, link }: info) => {
+const Card = ({ title, image, objetivo, responsabilidade, tecnologia, link }: info) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
@@ -55,6 +57,8 @@ const Card = ({ title, image, objetivo, link }: info) => {
             />
           </div>
           <p className="text-black mt-4">{objetivo}</p>
+          <p className="text-black mt-4">{responsabilidade}</p>
+          <p className="text-black mt-4">{tecnologia}</p>
         </div>
       </Modal>
     </div>
