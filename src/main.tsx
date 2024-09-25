@@ -1,24 +1,34 @@
-import { StrictMode } from "react";
+import React from "react";
 import { createRoot } from "react-dom/client";
-import Header from "./components/header/index.tsx";
-import About from "./components/about/index.tsx";
-import Banner from "./components/banner/index.tsx";
-import Projects from "./components/projects/index.tsx";
-import Experience from "./components/experience/index.tsx";
-import Contato from "./components/contact/index.tsx";
-import Footer from "./components/footer/index.tsx";
+import { BrowserRouter as Router} from "react-router-dom";
+import Header from "./components/header";
+import About from "./components/about";
+import Banner from "./components/banner";
+import Projects from "./components/projects";
+import Experience from "./components/experience";
+import Contato from "./components/contact";
+import Footer from "./components/footer";
 import "./index.css";
 
-createRoot(document.getElementById("root")!).render(
-  <StrictMode>
+// Tipagem para o componente App
+const App: React.FC = () => {
+  return (
     <div className="bg-slate-900 bg-no-repeat bg-cover overflow-hidden">
       <Header />
       <Banner />
       <About />
       <Projects />
-      <Experience />     
+      <Experience />
       <Contato />
       <Footer />
     </div>
-  </StrictMode>
+  );
+};
+
+const rootElement = document.getElementById("root") as HTMLElement;
+
+createRoot(rootElement).render(
+  <Router>
+    <App />
+  </Router>
 );
