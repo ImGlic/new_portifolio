@@ -8,7 +8,7 @@ import Projects from "./src/components/projects";
 import Experience from "./src/components/experience";
 import Contato from "./src/components/contact";
 import Footer from "./src/components/footer";
-import "./index.css";
+import "./src/index.css";
 
 // Tipagem para o componente App
 const App: React.FC = () => {
