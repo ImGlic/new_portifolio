@@ -11,7 +11,6 @@ import {
   FaJs,
   FaDocker,
   FaPhp,
-  FaLinux,
   FaCss3,
   FaHtml5,
 } from "react-icons/fa";
@@ -27,7 +26,7 @@ const Banner = () => {
         <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
           {/* Image */}
           <motion.div
-            variants={fadeIn("down", 0.5)}
+            variants={fadeIn({direction:"down", delay:0.5})}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -44,7 +43,7 @@ const Banner = () => {
           {/* Text */}
           <div className="flex-1 text-center text-white lg:text-left">
             <motion.h1
-              variants={fadeIn("up", 0.3)}
+              variants={fadeIn({direction:"up", delay:0.3})}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
@@ -54,17 +53,16 @@ const Banner = () => {
             </motion.h1>
 
             <motion.div
-              variants={fadeIn("up", 0.3)}
+              variants={fadeIn({direction:"down", delay:0.3})}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ onde: false, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.7 }}
               className="mb-6 txt-[50px] lg:text-[60px] text-white font-semibold uppercase
               leading-[1]"
             >
               <span className="mr-2 mt-2">I am a</span>
               <TypeAnimation
                 sequence={["Full Stack Developer", 500]}
-                color="#0a0a0a"
                 speed={50}
                 wrapper="span"
               />

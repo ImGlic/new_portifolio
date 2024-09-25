@@ -1,8 +1,4 @@
-import Slider from "react-slick";
 import { useInView } from "react-intersection-observer";
-import imageMinhaHistoria from "../../assets/foto-trabalhando.jpg";
-import imageMinhaHistoria2 from "../../assets/foto-trabalhando2.jpg";
-import imageMinhaEstudando from "../../assets/foto-estudando1.jpg";
 import imageMinhaTirandoFoto from "../../assets/foto-tirandofoto.jpg";
 import imageMinhaEventocarro from "../../assets/foto-eventocarro.jpg";
 import imageMinhaEventoaviacao from "../../assets/foto-eventoaviacao.jpg";
@@ -14,17 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 const About = () => {
   const [ref] = useInView({
     threshold: 0.5,
-  });
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  };
+  });  
 
   return (
     <section
@@ -131,17 +117,17 @@ const About = () => {
               />
             </div>
             <p className="text-slate-50">
-              Quando não estou programando, adoro me dedicar a várias atividades
-              que me mantêm ativo e engajado. Pratico corrida para manter a
-              forma e o bem-estar, e jogo vôlei tanto para me divertir quanto
-              para competir. Além disso, tenho um grande interesse por carros e
-              aviação, e frequentemente participo de eventos relacionados a
-              esses temas. Meu passado como atleta de futebol americano também
-              me trouxe valiosas experiências e desafios. Fora dos esportes, sou
-              um entusiasta da música, gosto de explorar novos sons e cozinhar
-              pratos variados. A fotografia e as viagens são duas das minhas
-              grandes paixões, e estou sempre em busca de novas aventuras para
-              capturar e explorar.
+                Quando não estou programando, adoro me dedicar a várias atividades
+                que me mantêm ativo e engajado. Pratico corrida para manter a
+                forma e o bem-estar, e jogo vôlei tanto para me divertir quanto
+                para competir. Além disso, tenho um grande interesse por carros e
+                aviação, e frequentemente participo de eventos relacionados a
+                esses temas. Meu passado como atleta de futebol americano também
+                me trouxe valiosas experiências e desafios. Fora dos esportes, sou
+                um entusiasta da música, gosto de explorar novos sons e cozinhar
+                pratos variados. A fotografia e as viagens são duas das minhas
+                grandes paixões, e estou sempre em busca de novas aventuras para
+                capturar e explorar.
             </p>
           </div>
       </div>
