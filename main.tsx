@@ -10,7 +10,6 @@ import Contato from "./src/components/contact";
 import Footer from "./src/components/footer";
 import "./src/index.css";
 
-// Tipagem para o componente App
 const App: React.FC = () => {
   return (
     <div className="bg-slate-900 bg-no-repeat bg-cover overflow-hidden">
