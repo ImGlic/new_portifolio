@@ -1,13 +1,13 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router} from "react-router-dom";
-import Header from "./components/header";
-import About from "./components/about";
-import Banner from "./components/banner";
-import Projects from "./components/projects";
-import Experience from "./components/experience";
-import Contato from "./components/contact";
-import Footer from "./components/footer";
+import Header from "./src/components/header";
+import About from "./src/components/about";
+import Banner from "./src/components/banner";
+import Projects from "./src/components/projects";
+import Experience from "./src/components/experience";
+import Contato from "./src/components/contact";
+import Footer from "./src/components/footer";
 import "./index.css";
 
 // Tipagem para o componente App
