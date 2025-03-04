@@ -3,6 +3,7 @@ import CardWork from "./cardExperience/index.tsx";
 import imageNtl from "../../assets/logo-ntl-semfundo.png";
 import imageFuzzy from "../../assets/logo-fuzzy.png";
 import imageSnake from "../../assets/logo-snake.png";
+import imageSesa from "../../assets/sesatech.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -61,6 +62,18 @@ const Work = () => {
         <Slider {...settings}>
           <div className="px-4">
             <CardWork
+              empresa="SESA"
+              image={imageSesa}
+              cargo="Analista Devops"
+              atribuicao="Responsável por criar e manter pipelines e DAGS no Airflow, administração de servidores. Criar e manter APIS 
+              desenvolvidas em python e manter pipelines no azure devops"
+              stack="Python, Airflow, FastAPI, Oracle DB"
+              dataInicio="21/10/2024"
+              dataFim="Atual"
+            />
+          </div>
+          <div className="px-4">
+            <CardWork
               empresa="Ntl Nova Tecnologia"
               image={imageNtl}
               cargo="Desenvolvedor FullStack Jr"
@@ -69,7 +82,7 @@ const Work = () => {
               de ser iniciado."
               stack="Php, JavaScript, BootStrap, Jquery, Ajax, SQLServer"
               dataInicio="01/07/2022"
-              dataFim="Atual"
+              dataFim="18/10/2024"
             />
           </div>
 
