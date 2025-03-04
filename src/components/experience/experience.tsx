@@ -67,7 +67,7 @@ const Work = () => {
               cargo="Analista Devops"
               atribuicao="Responsável por criar e manter pipelines e DAGS no Airflow, administração de servidores. Criar e manter APIS 
               desenvolvidas em python e manter pipelines no azure devops"
-              stack="Python, Airflow, FastAPI, Oracle DB"
+              stack="Python, Airflow, FastAPI, Oracle DB, Microsoft Azure"
               dataInicio="21/10/2024"
               dataFim="Atual"
             />
